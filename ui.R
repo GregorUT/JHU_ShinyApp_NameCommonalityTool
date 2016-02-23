@@ -11,8 +11,12 @@ shinyUI(pageWithSidebar(
                              choices = list("Female" = "F", "Male" = "M"), 
                              selected = 1),
                 actionButton("goButton", "Go!"),
+                
                tags$hr(),
-               tags$a(href="http://gregorut.github.io/NameCommonalityDocs/", "Name Commonality Tool Help")
+               p("Enter Name in Text Box"),
+               p("Select gender"),
+               tags$hr(),
+               tags$a(href="http://gregorut.github.io/NameCommonalityDocs/", "Name Commonality Tool Additional Help")
   ),
 
   mainPanel(
